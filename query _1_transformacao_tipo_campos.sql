@@ -1,0 +1,16 @@
+
+
+CREATE TABLE `uol_projects.gold_cats_project.tb_cats_facts_analytics` AS (
+    SELECT
+        CAST(ID AS STRING) AS ID,
+        CAST(ID_USER AS STRING) AS ID_USER,
+        CAST(DS_STATUS AS STRING) AS DS_STATUS,
+        CAST(DS_TEXT AS STRING) AS DS_TEXT,
+        CAST(DS_SOURCE AS STRING) AS DS_SOURCE,
+        CAST(DT_UPDATED_AT AS TIMESTAMP) AS DT_UPDATED_AT,
+        CAST(DS_TYPE AS STRING) AS DS_TYPE,
+        CAST(DT_CREATED_AT AS TIMESTAMP) AS DT_CREATED_AT,
+        CAST(DS_DELETED AS STRING) AS DS_DELETED,
+        CAST(DS_USED AS STRING) AS DS_USED
+    FROM `uol_projects.gold_cat_project.tb_cats_facts`
+);
